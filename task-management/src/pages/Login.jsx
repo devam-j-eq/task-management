@@ -16,6 +16,11 @@ const Login = () => {
 
   const navigate = useNavigate();
 
+  const handleLogin = () => {
+    // Add authentication logic here if needed
+    navigate("/dashboard");
+  };
+
   const submitHandler = async (data) => {
     console.log("submit");
   };
@@ -36,12 +41,12 @@ const Login = () => {
             </span>
             <p className='flex flex-col gap-0 md:gap-4 text-4xl md:text-6xl 2xl:text-7xl font-black text-center text-blue-700'>
               <span>eQuest Solutions</span>
-              <span>Task Manager</span>
+              <span>Task Management</span>
             </p>
 
-            <div className='cell'>
+            {<div className='cell'>
               <div className='circle rotate-in-up-left'></div>
-            </div>
+            </div>}
           </div>
         </div>
 
@@ -88,7 +93,7 @@ const Login = () => {
                 Forget Password?
               </span>
 
-              <Button
+              <Button  onClick={handleLogin} text="Go to Dashboard" 
                 type='submit'
                 label='Submit'
                 className='w-full h-10 bg-blue-700 text-yellow-50 rounded-full'
