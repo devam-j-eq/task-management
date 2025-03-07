@@ -17,7 +17,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Add authentication logic here if needed
+    // Add authentication 
     navigate("/dashboard");
   };
 
@@ -44,9 +44,7 @@ const Login = () => {
               <span>Task Management</span>
             </p>
 
-            {<div className='cell'>
-              <div className='circle rotate-in-up-left'></div>
-            </div>}
+            
           </div>
         </div>
 
