@@ -1,8 +1,6 @@
 import { Transition } from "@headlessui/react";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate, Outlet, Route, Routes, useLocation } from "react-router-dom";
-import clsx from "clsx";
-import { Fragment, useRef } from "react";
 import { IoClose } from "react-icons/io5";
 import { Toaster } from "sonner";
 import Navbar from "./components/Navbar";
@@ -18,7 +16,7 @@ import { setOpenSidebar } from "./redux/slices/authSlice";
 function Layout() {
   return (
     <div className="w-full h-screen flex">
-      <div className="hidden md:block w-1/5 h-screen bg-white sticky top-0">
+      <div className="hidden md:block w-1/5 h-screen bg-white sticky top-0 text-sm">
         <Sidebar />
       </div>
 
